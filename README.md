@@ -1,62 +1,63 @@
-what is yaml?
-yaml structure?
-Datatypes in Yaml?
-Yaml in VScode
-YAML & Python
-Real Wold Yamls
+### what is yaml?
 
+### yaml structure?
 
-YAML Fundamental?
+### Datatypes in Yaml?
 
-why learn yaml?
+### Yaml in VScode
 
-Cloud 
-Devops 
-Server to Server
-App to App
+### YAML & Python
 
+### Real World Yamls
 
-Common Languagw
+### YAML Fundamental?
 
+Why learn yaml?
+
+1. `Cloud` 
+2. `Devops` 
+3. `Server to Server`
+4. `App to App`
+
+### Common Language
+```
 JSON
 XML
 Yaml
-
+```
 
 Human readability
 
 HTML vs XML vs JSON vs YAML
 
+```
 ---
 address:
   street: :101 Main Street"
   ciry: San Jose
   state: Calinfornia
   zip: 95954
+```
+> [!TIP]
+> indentation is very important, 2 Spaces
 
-indentation is veru important
+Comments `#`
 
-2 Spaces
+#Yaml Styles
 
-Comments
+1. `Block Styles`
+2. `Flow Styles`
 
-'#'
-
-Yaml Styles
-
-    Block Styles 
-    Flow Styles
-
-Block Styles Example
-
+### Block Styles Example
+```
 ---
 fruits:
   - banana
   - mango
   - apple
 ---
-
-Flow Styles Example
+```
+### Flow Styles Example
 
 ---
 fruits: [ banana, mango, apple ]
@@ -70,20 +71,21 @@ address:
   state: Calinfornia
   zip: 95035   # Same as dictnory
 
-Flow Styles
-
+### Flow Styles
+```
 ---
 address: { street: "101 main street", city: San Jose, state: Calinfornia, zip: 95035}
+```
 
-key value pairs
-
+### key value pairs
+```
 city = "New York"
-
+```
 City is Key and "new York" is value
 
 #####
 # Yaml Datatypes
-
+```
 1. Scalars
     a. Strings
     b. Numbers
@@ -97,28 +99,30 @@ City is Key and "new York" is value
        a. Hashes
        b. dictionaries
        c. Key-value pairs
+```
 
-Null Value reperent in Yaml
-
+### Null Value reperent in Yaml
+```
 var1: 
 var1: null
 var1: ~
-
+```
 
 Long Strings
 
-You can use pipe symbol will preseve the new line charater
-
+You can use `pipe symbol` will preseve the `new line charater`.
+```
 message: |
-
+```
+```
 message: >
 
-    new line charater are ignored
-
+new line charater are ignored
+```
 
 ##################
 # multi-line strings(Block Scalars)
-
+```
 Block Style: | or >
 
 Block chomping indictapr : - Or +
@@ -126,4 +130,4 @@ Block chomping indictapr : - Or +
 indentation: number
 
 message: >-3
-   
+```
