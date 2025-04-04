@@ -1,0 +1,9 @@
+name: Najumudeen M
+age: 44
+occupation: Developer
+skills:
+  - Python
+  - Yaml
+  - Programming
+is_employed: true
+favorite_number: !!int "42"

@@ -1,0 +1,105 @@
+YAML, JSOn and XML are often compared because they can all be used to storedata in a structured manner.
+
+Yaml can contain comments 
+
+Yaml is often used for writing configuration files because of it's readability and simiplicity
+
+Yaml in Python
+
+Python can easily interact with YAML using libraries like PyYAML
+
+Example.
+
+How to load yaml file to python?
+
+import yaml
+
+with open('config.yaml', 'r) as file:
+    config = yaml.safe_load(file)
+
+print(config)
+
+This Python script reads a YAML file and convert it into a python dictnory
+
+
+Yaml is case sensitive
+
+it uses indentation to represent hierarchical relationships between elements.
+A colon (:) separates key-value pairs.
+
+Use a dash (-) for list items.
+
+Scalars are the simplest Datatypes in Yaml
+
+Sequences are equivalent to lists and arrays.
+
+A dash(-) denotes a Sequences item.
+
+Example.
+
+hobbies:
+  - Reading
+  - Cycling
+  - Gaming
+
+
+Mappings
+
+Mapping are key-value pairs, like dictionaries or Hashes.
+
+A colon (:) separates each key from its value.
+
+Example:
+
+student:
+  name: "John Doe"
+  age: 20
+
+Complex Structures
+
+YAML can represent Complex nested data structures using a combination of mapings and Sequences
+
+Example:
+
+employees:
+  - name: "Najumudeen M"
+    skills:
+      - Python
+      - YAML
+  - name: "Zayan"
+    skils:
+      - English
+      - Hindi
+
+YAML Types:
+
+Anchors
+Alias
+Tag
+
+Anchors (represented with &) allow you to label content for later reuse.
+
+Alias (represented with *) allow you to refer back to anchored content.
+
+Anchor and Aliases are powerful tools for reducing duplication and increasing YAML file maintainability.
+
+example:
+
+default: &DEFAULT 
+  name: "Najumudeen M"
+  age: 44
+
+user1: 
+  <<: *DEFAULT
+  name: "Najumudeen M"
+
+
+Tag in YAML provide a way to speciofy the type of a node.
+they are used to explicity decale a node's tyoe or the use a cusiotme data
+Types
+integer: !!int "5"
+string: !!str 5
+
+ Here, Integer will be represent as an integer, while 'string' will be interpreted as a string, despite the quoted "5";
+
+ 
