@@ -52,7 +52,7 @@ A colon (:) separates each key from its value.
 Example:
 
 student:
-  name: "John Doe"
+  name: "Tom Carry"
   age: 20
 
 Complex Structures
