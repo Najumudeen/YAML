@@ -19,7 +19,7 @@ Why learn yaml?
 3. `Server to Server`
 4. `App to App`
 
-### Common Language
+##### Common Language
 ```
 JSON
 XML
@@ -28,7 +28,7 @@ Yaml
 
 Human readability
 
-HTML vs XML vs JSON vs YAML
+###### HTML vs XML vs JSON vs YAML
 
 ```
 ---
@@ -43,12 +43,12 @@ address:
 
 Comments `#`
 
-#Yaml Styles
+##### Yaml Styles
 
 1. `Block Styles`
 2. `Flow Styles`
 
-### Block Styles Example
+##### Block Styles Example
 ```
 ---
 fruits:
@@ -57,34 +57,40 @@ fruits:
   - apple
 ---
 ```
-### Flow Styles Example
+##### Flow Styles Example
 
----
 fruits: [ banana, mango, apple ]
----
 
-Block Styles
+##### Block Styles
+```
 ---
 address:
   street: "101 main street"
   city: San Jose
   state: Calinfornia
   zip: 95035   # Same as dictnory
+```
 
-### Flow Styles
+##### Flow Styles
+
 ```
 ---
-address: { street: "101 main street", city: San Jose, state: Calinfornia, zip: 95035}
+address:
+   { street: "101 main street",
+     city: San Jose,
+     state: Calinfornia,
+     zip: 95035
+   }
 ```
 
-### key value pairs
+##### key value pairs
 ```
 city = "New York"
 ```
 City is Key and "new York" is value
 
-#####
-# Yaml Datatypes
+
+##### Yaml Datatypes
 ```
 1. Scalars
     a. Strings
@@ -101,7 +107,7 @@ City is Key and "new York" is value
        c. Key-value pairs
 ```
 
-### Null Value reperent in Yaml
+##### Null Value reperent in Yaml
 ```
 var1: 
 var1: null
@@ -111,17 +117,17 @@ var1: ~
 Long Strings
 
 You can use `pipe symbol` will preseve the `new line charater`.
+
 ```
 message: |
 ```
+
 ```
 message: >
-
 new line charater are ignored
 ```
 
-##################
-# multi-line strings(Block Scalars)
+##### multi-line strings(Block Scalars)
 ```
 Block Style: | or >
 
